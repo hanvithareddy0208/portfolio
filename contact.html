@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanvitha portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ================= 
+        NAVBAR 
+   ================= -->
+<div class="nav--bar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Left Logo -->
+    <div class="nav-left">
+      <div class="logo" role="img" aria-label="Hanvitha logo"></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link" id="loginNav">Login</a>
+
+      <div class="user-info" id="userInfo" style="display:none;">
+        <img id="navUserImg" alt="User">
+        <span id="navUsername"></span>
+        <div class="dropdown">
+           <a href="#" id="profileLink">Profile</a>
+        <a href="#" id="logoutBtn">Logout</a>
+        </div>
+
+
+    </div>
+  </nav>
+</div>
+<!------->
+
+
+
+
+
+
+
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- Title -->
+    <h2 class="title"><span>Let's Build Something Awesome</span></h2>
+    <p class="contact-subtitle">
+      I’m always open to discussing projects, creative ideas, or opportunities to be part of your visions.  
+      Fill the form or use any quick-contact options below.
+    </p>
+
+    <div class="contact-wrapper">
+
+      <!-- LEFT SIDE: INFO -->
+      <div class="contact-info-box">
+
+        <h3 class="contact-info-title">Contact Information</h3>
+
+        <p class="contact-info-description">
+          Feel free to reach out via email, social platforms, or the message form.  
+          I usually respond within <span class="contact-highlight">24 hours</span>.
+        </p>
+
+        <!-- Contact details list -->
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <span>Email: hanvithareddy0208@gmail.com</span>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <span>Phone: +91 98765 43210</span>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location: Hyderabad, India</span>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-clock"></i>
+          <span>Working Hours: Mon – Fri / 9AM – 6PM</span>
+        </div>
+
+        <div class="contact-info-item">
+          <i class="fas fa-globe"></i>
+          <span>Portfolio: www.hanvithareddy.com</span>
+        </div>
+
+        <!-- Quick badges -->
+        <div class="contact-badges">
+          <span class="contact-badge">Fast Response</span>
+          <span class="contact-badge">Professional Communication</span>
+          <span class="contact-badge">Client Friendly</span>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <h3 class="contact-social-title">Connect With Me</h3>
+        <div class="contact-social-icons">
+          <a href="https://github.com/hanvithareddy0208"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Quick Contact Buttons -->
+        <div class="contact-quick-links">
+          <a class="contact-quick-btn" href="mailto: hanvithareddy0208@gmail.com">
+            <i class="fas fa-paper-plane"></i> Email Me
+          </a>
+          <a class="contact-quick-btn" href="tel:+919876543210">
+            <i class="fas fa-phone-alt"></i> Call Now
+          </a>
+          <a class="contact-quick-btn" href="#">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE: FORM -->
+      <form class="contact-form">
+
+        <h3 class="contact-form-title">Send a Message</h3>
+
+        <div class="contact-form-group">
+          <input type="text" required />
+          <label>Your Name</label>
+        </div>
+
+        <div class="contact-form-group">
+          <input type="email" required />
+          <label>Email Address</label>
+        </div>
+
+        <div class="contact-form-group">
+          <input type="text" required />
+          <label>Subject</label>
+        </div>
+
+        <div class="contact-form-group">
+          <textarea required></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="contact-send-btn">
+          Send Message <i class="fas fa-arrow-right"></i>
+        </button>
+
+      </form>
+    </div>
+
+    <!-- Optional Google Map -->
+    <div class="contact-map-box">
+      <iframe
+        class="contact-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5359595001737!2d78.4473252749482!3d17.431222603270388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90af5a334bad%3A0x7cfd174a264a3ae!2sHyderabad!5e0!3m2!1sen!2sin!4v1700000000000"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------FOOTER -------->
+<footer class="premium-footer">
+
+  <!-- ================= TOP ROW ================= -->
+  <div class="footer-row footer-row-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Hanvitha Pesarikayala</h2>
+      <p class="brand-tag">Full Stack Developer</p>
+      <p class="brand-desc">
+        Building scalable, modern web applications with clean UI and reliable backend systems.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hanvithareddy0208" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:hanvithareddy0208@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hanvithareddy0208@gmail.com">hanvithareddy0208@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+91 9876543210">+91 9876543210</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          Open for Freelance
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop-house"></i>
+          Remote / Hybrid
+        </li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-section footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Occasional updates on projects & articles.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  <div class="footer-row footer-row-bottom">
+
+    <!-- SERVICES -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Full Stack Web Development</a></li>
+        <li><a href="#">Frontend Engineering</a></li>
+        <li><a href="#">Backend API Development</a></li>
+        <li><a href="#">UI / UX Implementation</a></li>
+        <li><a href="#">Performance Optimization</a></li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-section">
+      <h3>Technologies</h3>
+      <ul>
+        <li><a href="#">HTML • CSS • JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Node.js</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#">Three.js</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-section map-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Hyderabad&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+  <div class="footer-bottom">
+    <p>© 2025 Hanvitha Pesarikayala · All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<!-- NAVBAR JS FIRST -->
+<script src="nav.js" defer></script>
+
+<!-- AUTH (login/register handling) -->
+<script src="auth.js" defer></script>
+
+<!-- PROFILE (profile editing, image update) -->
+<script src="profile.js" defer></script>
+
+<!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
+<script src="dynamicAuth.js" defer></script>
+
+<script type="module" src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>

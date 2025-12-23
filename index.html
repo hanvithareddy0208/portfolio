@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanvitha portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Background Canvas -->
+  <canvas id="bg"></canvas>
+  <!-- ================= 
+        NAVBAR 
+   ================= -->
+<div class="nav--bar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Left Logo -->
+    <div class="nav-left">
+      <div class="logo" role="img" aria-label="Hanvitha logo"></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link" id="loginNav">Login</a>
+      <div class="user-info" id="userInfo" style="display:none;">
+        <img id="navUserImg" alt="User">
+        <span id="navUsername"></span>
+        <div class="dropdown">
+        <a href="login.html/#profileForm" id="goProfile">Profile</a>
+    <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </div>
+  </nav>
+</div>
+<!------->
+
+<!-- ================== hero section =====================-->
+<div id="home" class="hero">
+  <div class="hero-card">
+    <span class="hero-badge">🚀 Available for Projects</span>
+    <h1>
+     
+     <h1 class="hero-name"><span>Hi, I’m Hanvitha</span></h1>
+    </h1>
+    <p class="hero-subtitle">
+      I build <span class="typing"></span>
+    </p>
+    <p class="hero-desc">
+      Passionate Full Stack Developer crafting modern, scalable, and visually
+      striking web experiences using cutting-edge technologies.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="hero-btn primary">View Projects</a>
+      <a href="contact.html" class="hero-btn secondary">Contact Me</a>
+    </div>
+  </div>
+</div>
+<!------->
+
+<!---------TECHNOLOGIES-------->
+<section class="tech-section" id="technologies">
+  <h2 class="title">
+    <span>Technologies</span>
+  </h2>
+  <p class="section-subtitle">
+    Industry-standard tools and technologies I work with daily.
+  </p>
+  <div class="tech-grid">
+    <!-- Frontend -->
+    <div class="tech-card fade-up">
+      <h3>Frontend</h3>
+      <div class="tech-icons">
+        <div class="tech-item html"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+        <div class="tech-item css"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="tech-item js"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="tech-item react"><i class="fa-brands fa-react"></i><span>React</span></div>
+        <div class="tech-item bootstrap"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+        <div class="tech-item sass"><i class="fa-brands fa-sass"></i><span>SASS</span></div>
+        <div class="tech-item responsive"><i class="fa-solid fa-mobile-screen"></i><span>Responsive Design</span></div>
+        <div class="tech-item ux"><i class="fa-solid fa-pen-nib"></i><span>UI / UX</span></div>
+      </div>
+    </div>
+    <!-- Backend -->
+    <div class="tech-card fade-up delay-1">
+      <h3>Backend</h3>
+      <div class="tech-icons">
+        <div class="tech-item node"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+        <div class="tech-item express"><i class="fa-solid fa-server"></i><span>Express</span></div>
+        <div class="tech-item java"><i class="fa-brands fa-java"></i><span>Java</span></div>
+        <div class="tech-item spring"><i class="fa-solid fa-leaf"></i><span>Spring Boot</span></div>
+        <div class="tech-item api"><i class="fa-solid fa-code"></i><span>REST APIs</span></div>
+        <div class="tech-item jwt"><i class="fa-solid fa-shield-halved"></i><span>JWT</span></div>
+      </div>
+    </div>
+    <!-- Database -->
+    <div class="tech-card fade-up delay-2">
+      <h3>Database</h3>
+      <div class="tech-icons">
+        <div class="tech-item mysql"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+        <div class="tech-item mongo"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+        <div class="tech-item db"><i class="fa-solid fa-project-diagram"></i><span>DB Design</span></div>
+        <div class="tech-item crud"><i class="fa-solid fa-arrows-rotate"></i><span>CRUD</span></div>
+      </div>
+    </div>
+    <!-- Tools -->
+    <div class="tech-card fade-up delay-3">
+      <h3>Tools & Platforms</h3>
+      <div class="tech-icons">
+        <div class="tech-item git"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="tech-item github"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+        <div class="tech-item docker"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+        <div class="tech-item cloud"><i class="fa-solid fa-cloud"></i><span>Cloud</span></div>
+        <div class="tech-item linux"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+      </div>
+    </div>
+    <!-- Learning -->
+    <div class="tech-card fade-up delay-4">
+      <h3>Currently Learning</h3>
+      <div class="tech-icons">
+        <div class="tech-item aws"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+        <div class="tech-item next"><i class="fa-brands fa-react"></i><span>Next.js</span></div>
+        <div class="tech-item system"><i class="fa-solid fa-brain"></i><span>System Design</span></div>
+        <div class="tech-item ai"><i class="fa-solid fa-robot"></i><span>AI Integration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-------->
+
+  <!-------PROJECTS------->
+<section class="index-projects" id="projects">
+  <h2 class="title"><span>Projects</span></h2>
+  <br>
+  <!-- PROJECT 1 -->
+  <div class="project-row animate-project slide-right">
+    <div class="project-image">
+      <img src="Screenshot (177).png" alt="Food App">
+      <div class="project-actions">
+        <a href="javascript:void(0)">Live</a>
+        <a href="javascript:void(0)">GitHub</a>
+      </div>
+    </div>
+    <div class="project-content">
+      <span class="project-tag">Full Stack</span>
+      <h3>Online Food Ordering App</h3>
+      <p>
+        Complete food ordering platform with real-time menu browsing, cart, and secure checkout.
+      </p>
+      <ul>
+        <li>User authentication</li>
+        <li>Cart & order tracking</li>
+        <li>Responsive UI</li>
+      </ul>
+      <p class="project-tech">React • Node • MongoDB</p>
+    </div>
+  </div>
+  <!-- PROJECT 2 -->
+  <div class="project-row animate-project slide-right">
+    <div class="project-image">
+      <img src="https://picsum.photos/700/400?2" alt="Best Project">
+      <div class="project-actions">
+        <a href="javascript:void(0)">Live</a>
+        <a href="javascript:void(0)">GitHub</a>
+      </div>
+    </div>
+    <div class="project-content">
+      <span class="project-tag">Best Project</span>
+      <h3>Advanced Web Platform</h3>
+      <p>
+        Highly optimized web platform focused on performance, scalability, and modern UI patterns.
+      </p>
+      <ul>
+        <li>Optimized rendering</li>
+        <li>Reusable components</li>
+        <li>Scalable architecture</li>
+      </ul>
+      <p class="project-tech">Next.js • API • Tailwind</p>
+    </div>
+  </div>
+  <!-- PROJECT 3 -->
+  <div class="project-row animate-project slide-right">
+    <div class="project-image">
+      <img src="OIP.jpg" alt="Portfolio">
+      <div class="project-actions">
+        <a href="javascript:void(0)">Live</a>
+        <a href="javascript:void(0)">GitHub</a>
+      </div>
+    </div>
+    <div class="project-content">
+      <span class="project-tag">Frontend</span>
+      <h3>Developer Portfolio</h3>
+      <p>
+        Personal portfolio showcasing projects, skills, and professional experience with a premium look.
+      </p>
+      <ul>
+        <li>Dark theme UI</li>
+        <li>Clean animations</li>
+        <li>SEO optimized</li>
+      </ul>
+      <p class="project-tech">HTML • CSS • JavaScript</p>
+    </div>
+  </div>
+</section>
+<!------------->
+
+<!----TESTINOMIALS------>
+<section class="index-testimonials">
+  <h2 class="title"><span>What Clients Say</span></h2><br>
+  <div class="testimonials-wrapper">
+    <div class="testimonials-track">
+      <!-- CARD 1 -->
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=12" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Hanvitha delivered a clean, scalable product on time with great attention to detail.</p>
+        <h4>Rahul Verma</h4>
+        <span>Startup Founder</span>
+      </div>
+      <!-- CARD 2 -->
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=32" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Strong frontend skills and excellent communication throughout the project.</p>
+        <h4>Ananya Sharma</h4>
+        <span>Product Manager</span>
+      </div>
+      <!-- CARD 3 -->
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=56" alt="Client">
+        <div class="stars">★★★★☆</div>
+        <p>Reliable, professional, and technically sound. Would collaborate again.</p>
+        <h4>Michael Chen</h4>
+        <span>Tech Lead</span>
+      </div>
+      <!-- CARD 4 -->
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=48" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Smooth workflow and excellent UX quality. Highly recommended.</p>
+        <h4>Sophia Williams</h4>
+        <span>UX Consultant</span>
+      </div>
+      <!-- DUPLICATE FOR INFINITE LOOP -->
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=12" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Hanvitha delivered a clean, scalable product on time with great attention to detail.</p>
+        <h4>Rahul Verma</h4>
+        <span>Startup Founder</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=32" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Strong frontend skills and excellent communication throughout the project.</p>
+        <h4>Ananya Sharma</h4>
+        <span>Product Manager</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=56" alt="Client">
+        <div class="stars">★★★★☆</div>
+        <p>Reliable, professional, and technically sound. Would collaborate again.</p>
+        <h4>Michael Chen</h4>
+        <span>Tech Lead</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/100?img=48" alt="Client">
+        <div class="stars">★★★★★</div>
+        <p>Smooth workflow and excellent UX quality. Highly recommended.</p>
+        <h4>Sophia Williams</h4>
+        <span>UX Consultant</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------->
+
+
+
+
+<!-- CTA -->
+<section class="index-cta">
+  <div class="cta-container">
+    <div class="cta-left">
+      <h3><span>Build Something Next-Level</span></h3>
+      <div class="underline"></div>
+
+      <p>
+        Let’s collaborate to craft interactive, modern web experiences that
+        are fast, scalable, and visually stunning.
+      </p>
+
+      <!-- Feature Highlights -->
+      <div class="cta-features">
+        <div class="feature">
+          <span>⚡</span>
+          <small>Fast Performance</small>
+        </div>
+        <div class="feature">
+          <span>🎨</span>
+          <small>Clean UI/UX</small>
+        </div>
+        <div class="feature">
+          <span>📱</span>
+          <small>Responsive</small>
+        </div>
+      </div>
+
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--------->
+
+
+
+
+
+
+
+
+<!--------FOOTER -------->
+<footer class="premium-footer">
+
+  <!-- ================= TOP ROW ================= -->
+  <div class="footer-row footer-row-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Hanvitha Pesarikayala</h2>
+      <p class="brand-tag">Full Stack Developer</p>
+      <p class="brand-desc">
+        Building scalable, modern web applications with clean UI and reliable backend systems.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hanvithareddy0208" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:hanvithareddy0208@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hanvithareddy0208@gmail.com">hanvithareddy0208@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+91 9876543210">+91 9876543210</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          Open for Freelance
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop-house"></i>
+          Remote / Hybrid
+        </li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-section footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Occasional updates on projects & articles.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  <div class="footer-row footer-row-bottom">
+
+    <!-- SERVICES -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Full Stack Web Development</a></li>
+        <li><a href="#">Frontend Engineering</a></li>
+        <li><a href="#">Backend API Development</a></li>
+        <li><a href="#">UI / UX Implementation</a></li>
+        <li><a href="#">Performance Optimization</a></li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-section">
+      <h3>Technologies</h3>
+      <ul>
+        <li><a href="#">HTML • CSS • JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Node.js</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#">Three.js</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-section map-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Hyderabad&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+  <div class="footer-bottom">
+    <p>© 2025 Hanvitha Pesarikayala · All Rights Reserved</p>
+  </div>
+
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    const expanded =
+      hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", !expanded);
+  });
+
+  /* Optional: close menu on link click */
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("active");
+      hamburger.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+
+</script>
+
+<!-- NAVBAR JS FIRST -->
+<script src="nav.js" defer></script>
+
+<!-- AUTH (login/register handling) -->
+<script src="auth.js" defer></script>
+
+<!-- PROFILE (profile editing, image update) -->
+<script src="profile.js" defer></script>
+
+<!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
+<script src="dynamicAuth.js" defer></script>
+
+<script type="module" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
+
+
+
+
+
+
+
+

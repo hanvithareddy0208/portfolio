@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanvitha portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ================= 
+        NAVBAR 
+   ================= -->
+<div class="nav--bar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Left Logo -->
+    <div class="nav-left">
+      <div class="logo" role="img" aria-label="Hanvitha logo"></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+     <a href="login.html" class="nav-link" id="loginNav">Login</a>
+
+      <div class="user-info" id="userInfo" style="display:none;">
+        <img id="navUserImg" alt="User">
+        <span id="navUsername"></span>
+        <div class="dropdown">
+           <a href="#" id="profileLink">Profile</a>
+        <a href="#" id="logoutBtn">Logout</a>
+        </div>
+
+
+    </div>
+  </nav>
+</div>
+<!------->
+
+
+
+
+
+<section class="resources-section">
+  <h2 class="title"><span>Resources</span></h2>
+  <p class="section-intro">
+    A curated set of learning materials, tools, and references that I personally use and recommend for building modern, scalable, and clean applications.
+  </p>
+
+  <div class="resources-grid">
+    <div class="resource-card">
+      <h3>Web Dev Cheat Sheet</h3>
+      <p>
+        A compact reference covering HTML, CSS, and JavaScript essentials.
+        Useful for quick syntax checks, layout reminders, and core concepts.
+      </p>
+      <a href="#" class="btn">Download PDF</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Project Starter Template</h3>
+      <p>
+        A clean and scalable folder structure for frontend and full-stack projects,
+        including reusable components and best practices.
+      </p>
+      <a href="#" class="btn">Download Template</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>JavaScript Notes</h3>
+      <p>
+        Well-organized notes explaining JavaScript fundamentals, ES6 features,
+        async concepts, and common interview patterns.
+      </p>
+      <a href="#" class="btn">Download Notes</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>UI Design Assets</h3>
+      <p>
+        A collection of icons, color palettes, and layout references
+        for designing modern, user-friendly interfaces.
+      </p>
+      <a href="#" class="btn">View Assets</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Learning Roadmap</h3>
+      <p>
+        A structured roadmap for frontend and full-stack development,
+        guiding learners from basics to advanced real-world skills.
+      </p>
+      <a href="#" class="btn">View Roadmap</a>
+    </div>
+
+    <div class="resource-card">
+      <h3>Useful Dev Links</h3>
+      <p>
+        Hand-picked links to documentation, tools, and platforms
+        that help developers write better, cleaner, and faster code.
+      </p>
+      <a href="#" class="btn">Explore Links</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="blogs-section">
+  <h2 class="title"><span>Blogs</span></h2>
+  <p class="section-intro">
+    Thoughts, learnings, and deep dives from my journey as a developer — covering code, design,
+    problem solving, and real-world experiences.
+  </p>
+
+  <div class="blogs-list">
+    <article class="blog-item">
+      <span class="blog-date">May 2025</span>
+      <h3 class="blog-title">Understanding Modern CSS Layouts</h3>
+      <p class="blog-desc">
+        A practical breakdown of Flexbox, Grid, and responsive design techniques
+        used in real-world production projects.
+      </p>
+      <a href="#" class="blog-link">Read article →</a>
+    </article>
+
+    <article class="blog-item">
+      <span class="blog-date">April 2025</span>
+      <h3 class="blog-title">How I Structure Frontend Projects</h3>
+      <p class="blog-desc">
+        Folder structures, naming conventions, and reusable patterns
+        that help keep projects clean and scalable.
+      </p>
+      <a href="#" class="blog-link">Read article →</a>
+    </article>
+
+    <article class="blog-item">
+      <span class="blog-date">March 2025</span>
+      <h3 class="blog-title">JavaScript Concepts That Actually Matter</h3>
+      <p class="blog-desc">
+        Closures, async/await, event loop, and performance tips —
+        explained with simple examples.
+      </p>
+      <a href="#" class="blog-link">Read article →</a>
+    </article>
+
+    <article class="blog-item">
+      <span class="blog-date">February 2025</span>
+      <h3 class="blog-title">Designing Developer-Friendly UI</h3>
+      <p class="blog-desc">
+        Lessons learned while building clean, accessible,
+        and visually balanced interfaces.
+      </p>
+      <a href="#" class="blog-link">Read article →</a>
+    </article>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="tools-section">
+  <h2 class="title"><span>Tools & Platforms</span></h2>
+  <p class="section-intro">
+    Tools and platforms I regularly use or recommend for learning, building,
+    and maintaining clean, scalable projects.
+  </p>
+
+  <div class="tools-grid">
+    <a href="https://developer.mozilla.org" target="_blank" class="tool-card">
+      <h3>MDN Web Docs</h3>
+      <p>Trusted documentation for HTML, CSS, and JavaScript fundamentals.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+
+    <a href="https://www.freecodecamp.org" target="_blank" class="tool-card">
+      <h3>FreeCodeCamp</h3>
+      <p>Practice-driven platform for learning web development.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+
+    <a href="https://github.com" target="_blank" class="tool-card">
+      <h3>GitHub</h3>
+      <p>Version control, collaboration, and open-source learning.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+
+    <a href="https://code.visualstudio.com" target="_blank" class="tool-card">
+      <h3>Visual Studio Code</h3>
+      <p>Powerful code editor with a rich extension ecosystem.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+
+    <a href="https://www.figma.com" target="_blank" class="tool-card">
+      <h3>Figma</h3>
+      <p>UI design and prototyping for modern interfaces.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+
+    <a href="https://codepen.io" target="_blank" class="tool-card">
+      <h3>CodePen</h3>
+      <p>Quick frontend experiments and UI testing.</p>
+      <span class="tool-link">Visit →</span>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="reviews-section">
+  <h2 class="title"><span>Reviews?</span></h2>
+  <div class="reviews-wrapper">
+    <div class="reviews-track">
+      <div class="review">
+        <p class="name">Alice</p>
+        <p class="text">Excellent</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Bob</p>
+        <p class="text">Awesome</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Charlie</p>
+        <p class="text">Good</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Diana</p>
+        <p class="text">Amazing</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Ethan</p>
+        <p class="text">Nice</p>
+        <p class="stars">⭐⭐⭐</p>
+      </div>
+
+      <!-- duplicate for continuous scroll -->
+      <div class="review">
+        <p class="name">Alice</p>
+        <p class="text">Excellent</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Bob</p>
+        <p class="text">Awesome</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Charlie</p>
+        <p class="text">Good</p>
+        <p class="stars">⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Diana</p>
+        <p class="text">Amazing</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p class="name">Ethan</p>
+        <p class="text">Nice</p>
+        <p class="stars">⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="resources-faq" id="faq">
+  <h2 class="title"><span>Frequently Asked Questions</span></h2>
+  <p class="faq-subtitle">Answers to common questions about my resources and workflow.</p>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Which programming languages do you recommend for beginners?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>I recommend starting with JavaScript for web development or Python for general programming and data projects.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do you organize your resources?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>I categorize them by topic: Frontend, Backend, Database, Tools, and Tutorials. I also tag them by difficulty.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I use your shared snippets and templates?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Yes! Feel free to use my snippets, but please provide credit if you use them in your projects or tutorials.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do you keep your resources updated?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>I review my resources regularly and add new tools, tutorials, and articles that I find useful.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------FOOTER -------->
+<footer class="premium-footer">
+
+  <!-- ================= TOP ROW ================= -->
+  <div class="footer-row footer-row-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Hanvitha Pesarikayala</h2>
+      <p class="brand-tag">Full Stack Developer</p>
+      <p class="brand-desc">
+        Building scalable, modern web applications with clean UI and reliable backend systems.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hanvithareddy0208" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:hanvithareddy0208@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hanvithareddy0208@gmail.com">hanvithareddy0208@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+91 9876543210">+91 9876543210</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          Open for Freelance
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop-house"></i>
+          Remote / Hybrid
+        </li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-section footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Occasional updates on projects & articles.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  <div class="footer-row footer-row-bottom">
+
+    <!-- SERVICES -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Full Stack Web Development</a></li>
+        <li><a href="#">Frontend Engineering</a></li>
+        <li><a href="#">Backend API Development</a></li>
+        <li><a href="#">UI / UX Implementation</a></li>
+        <li><a href="#">Performance Optimization</a></li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-section">
+      <h3>Technologies</h3>
+      <ul>
+        <li><a href="#">HTML • CSS • JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Node.js</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#">Three.js</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-section map-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Hyderabad&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+  <div class="footer-bottom">
+    <p>© 2025 Hanvitha Pesarikayala · All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+<script>
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  const icon = question.querySelector('i');
+
+  question.addEventListener('click', () => {
+    const open = answer.style.maxHeight;
+    // Close all others
+    faqItems.forEach(i => {
+      i.querySelector('.faq-answer').style.maxHeight = null;
+      i.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+    });
+    // Toggle current
+    if(!open){
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      answer.style.maxHeight = null;
+      icon.style.transform = 'rotate(0deg)';
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const track = document.querySelector('.reviews-track');
+let offset = 0;
+const speed = 2; // increase for faster scroll
+
+function scroll() {
+  offset += speed;
+  if (offset >= track.scrollWidth / 2) {
+    offset = 0;
+  }
+  track.style.transform = `translateX(-${offset}px)`;
+  requestAnimationFrame(scroll);
+}
+
+requestAnimationFrame(scroll);
+
+
+
+</script>
+
+<!-- NAVBAR JS FIRST -->
+<script src="nav.js" defer></script>
+
+<!-- AUTH (login/register handling) -->
+<script src="auth.js" defer></script>
+
+<!-- PROFILE (profile editing, image update) -->
+<script src="profile.js" defer></script>
+
+<!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
+<script src="dynamicAuth.js" defer></script>
+
+<script type="module" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanvitha portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ================= 
+        NAVBAR 
+   ================= -->
+<div class="nav--bar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Left Logo -->
+    <div class="nav-left">
+      <div class="logo" role="img" aria-label="Hanvitha logo"></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    <a href="login.html" class="nav-link" id="loginNav">Login</a>
+
+      <div class="user-info" id="userInfo" style="display:none;">
+        <img id="navUserImg" alt="User">
+        <span id="navUsername"></span>
+        <div class="dropdown">
+           <a href="#" id="profileLink">Profile</a>
+        <a href="#" id="logoutBtn">Logout</a>
+        </div>
+
+
+    </div>
+  </nav>
+</div>
+<!------->
+
+
+
+
+
+
+<section class="about-section" id="about">
+  <div class="about-container">
+
+    <!-- ================= HERO INTRO ================= -->
+    <div class="about-intro-hero">
+      <!-- LEFT -->
+      <div class="about-hero-text">
+        <h1 class="hero-heading">
+          Hi, I’m <span class="name-highlight">Hanvitha</span>
+        </h1>
+
+        <p class="hero-role">Full Stack Developer</p>
+
+        <p class="hero-bio">
+          I specialize in building scalable, maintainable, and high-performance
+          web applications — from elegant interfaces to robust backend systems.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">Resume</a>
+          <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="about-hero-quote">
+        <div class="quote-box">
+          <p>“I don’t just write code — I craft systems that scale and perform.”</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TIMELINE ================= -->
+    <section class="about-timeline">
+      <h2 class="title"><span>My Journey</span></h2>
+      <p class="about-subtitle">
+        A growth-driven path from fundamentals to production-ready systems.
+      </p>
+
+      <div class="timeline">
+
+        <!-- TOP -->
+        <div class="timeline-item top" data-pos="1">
+          <div class="timeline-content">
+            <h3>Foundation</h3>
+            <span>2022</span>
+            <p>Programming basics and logical problem solving.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item top" data-pos="2">
+          <div class="timeline-content">
+            <h3>Frontend</h3>
+            <span>2023</span>
+            <p>Responsive UI, accessibility & design systems.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item top" data-pos="3">
+          <div class="timeline-content">
+            <h3>Full Stack</h3>
+            <span>2024</span>
+            <p>APIs, authentication, databases & workflows.</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM (BETWEEN) -->
+        <div class="timeline-item bottom" data-pos="4">
+          <div class="timeline-content">
+            <h3>Backend Depth</h3>
+            <span>2024</span>
+            <p>Security, optimization, and data modeling.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item bottom" data-pos="5">
+          <div class="timeline-content">
+            <h3>Production</h3>
+            <span>2025</span>
+            <p>Scalability, deployment & performance.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="about-skills" id="skills">
+
+  <h2 class="title"><span>Technical skills</span></h2>
+  <p class="about-subtitle">Technologies and tools I work with.</p>
+
+  <div class="skills-container">
+
+    <!-- FRONTEND -->
+    <div class="skills-category">
+      <h3>Frontend</h3>
+
+      <div class="skill html"><i class="fa-brands fa-html5"></i><span>HTML5</span><span class="percent" data-percent="95">0%</span><div class="bar"><div class="fill" data-level="95%"></div></div></div>
+      <div class="skill css"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span><span class="percent" data-percent="90">0%</span><div class="bar"><div class="fill" data-level="90%"></div></div></div>
+      <div class="skill js"><i class="fa-brands fa-js"></i><span>JavaScript</span><span class="percent" data-percent="85">0%</span><div class="bar"><div class="fill" data-level="85%"></div></div></div>
+      <div class="skill react"><i class="fa-brands fa-react"></i><span>React</span><span class="percent" data-percent="80">0%</span><div class="bar"><div class="fill" data-level="80%"></div></div></div>
+      <div class="skill bootstrap"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span><span class="percent" data-percent="78">0%</span><div class="bar"><div class="fill" data-level="78%"></div></div></div>
+      <div class="skill sass"><i class="fa-brands fa-sass"></i><span>SASS</span><span class="percent" data-percent="75">0%</span><div class="bar"><div class="fill" data-level="75%"></div></div></div>
+      <div class="skill responsive"><i class="fa-solid fa-mobile-screen"></i><span>Responsive Design</span><span class="percent" data-percent="90">0%</span><div class="bar"><div class="fill" data-level="90%"></div></div></div>
+      <div class="skill ux"><i class="fa-solid fa-pen-ruler"></i><span>UI / UX</span><span class="percent" data-percent="72">0%</span><div class="bar"><div class="fill" data-level="72%"></div></div></div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="skills-category">
+      <h3>Backend</h3>
+
+      <div class="skill node"><i class="fa-brands fa-node-js"></i><span>Node.js</span><span class="percent" data-percent="80">0%</span><div class="bar"><div class="fill" data-level="80%"></div></div></div>
+      <div class="skill express"><i class="fa-solid fa-server"></i><span>Express.js</span><span class="percent" data-percent="78">0%</span><div class="bar"><div class="fill" data-level="78%"></div></div></div>
+      <div class="skill java"><i class="fa-brands fa-java"></i><span>Java</span><span class="percent" data-percent="75">0%</span><div class="bar"><div class="fill" data-level="75%"></div></div></div>
+      <div class="skill spring"><i class="fa-solid fa-leaf"></i><span>Spring Boot</span><span class="percent" data-percent="70">0%</span><div class="bar"><div class="fill" data-level="70%"></div></div></div>
+      <div class="skill api"><i class="fa-solid fa-plug"></i><span>REST APIs</span><span class="percent" data-percent="82">0%</span><div class="bar"><div class="fill" data-level="82%"></div></div></div>
+      <div class="skill jwt"><i class="fa-solid fa-key"></i><span>JWT</span><span class="percent" data-percent="74">0%</span><div class="bar"><div class="fill" data-level="74%"></div></div></div>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="skills-category">
+      <h3>Database</h3>
+
+      <div class="skill mysql"><i class="fa-solid fa-database"></i><span>MySQL</span><span class="percent" data-percent="82">0%</span><div class="bar"><div class="fill" data-level="82%"></div></div></div>
+      <div class="skill mongo"><i class="fa-solid fa-leaf"></i><span>MongoDB</span><span class="percent" data-percent="78">0%</span><div class="bar"><div class="fill" data-level="78%"></div></div></div>
+      <div class="skill db"><i class="fa-solid fa-sitemap"></i><span>DB Design</span><span class="percent" data-percent="76">0%</span><div class="bar"><div class="fill" data-level="76%"></div></div></div>
+      <div class="skill crud"><i class="fa-solid fa-repeat"></i><span>CRUD</span><span class="percent" data-percent="85">0%</span><div class="bar"><div class="fill" data-level="85%"></div></div></div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="skills-category">
+      <h3>Tools & Platforms</h3>
+
+      <div class="skill git"><i class="fa-brands fa-git-alt"></i><span>Git</span><span class="percent" data-percent="88">0%</span><div class="bar"><div class="fill" data-level="88%"></div></div></div>
+      <div class="skill github"><i class="fa-brands fa-github"></i><span>GitHub</span><span class="percent" data-percent="90">0%</span><div class="bar"><div class="fill" data-level="90%"></div></div></div>
+      <div class="skill docker"><i class="fa-brands fa-docker"></i><span>Docker</span><span class="percent" data-percent="70">0%</span><div class="bar"><div class="fill" data-level="70%"></div></div></div>
+      <div class="skill cloud"><i class="fa-solid fa-cloud"></i><span>Cloud</span><span class="percent" data-percent="68">0%</span><div class="bar"><div class="fill" data-level="68%"></div></div></div>
+      <div class="skill linux"><i class="fa-brands fa-linux"></i><span>Linux</span><span class="percent" data-percent="75">0%</span><div class="bar"><div class="fill" data-level="75%"></div></div></div>
+    </div>
+
+    <!-- LEARNING -->
+    <div class="skills-category">
+      <h3>Currently Learning</h3>
+
+      <div class="skill aws"><i class="fa-brands fa-aws"></i><span>AWS</span><span class="percent" data-percent="65">0%</span><div class="bar"><div class="fill" data-level="65%"></div></div></div>
+      <div class="skill next"><i class="fa-solid fa-n"></i><span>Next.js</span><span class="percent" data-percent="60">0%</span><div class="bar"><div class="fill" data-level="60%"></div></div></div>
+      <div class="skill system"><i class="fa-solid fa-diagram-project"></i><span>System Design</span><span class="percent" data-percent="62">0%</span><div class="bar"><div class="fill" data-level="62%"></div></div></div>
+      <div class="skill ai"><i class="fa-solid fa-brain"></i><span>AI</span><span class="percent" data-percent="58">0%</span><div class="bar"><div class="fill" data-level="58%"></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= MY APPROACH ================= -->
+<section class="about-approach" id="approach">
+
+  <h2 class="title"><span>My Approach</span></h2>
+  <p class="about-subtitle">
+    How I turn ideas into reliable, scalable, and production-ready solutions.
+  </p>
+
+  <div class="approach-container">
+
+    <div class="approach-card">
+      <i class="fa-solid fa-magnifying-glass-chart magnify"></i>
+      <span class="step">01</span>
+      <h3>Understand the Problem</h3>
+      <p>I clearly understand requirements, users, and goals before writing any code.</p>
+    </div>
+
+    <div class="approach-card">
+      <i class="fa-solid fa-diagram-project diagram"></i>
+      <span class="step">02</span>
+      <h3>Design the System</h3>
+      <p>I plan architecture, APIs, and data flow for scalability and security.</p>
+    </div>
+
+    <div class="approach-card">
+      <i class="fa-solid fa-code code"></i>
+      <span class="step">03</span>
+      <h3>Build Clean Code</h3>
+      <p>I write modular, readable, and maintainable code using best practices.</p>
+    </div>
+
+    <div class="approach-card">
+      <i class="fa-solid fa-gauge-high gauge"></i>
+      <span class="step">04</span>
+      <h3>Test & Optimize</h3>
+      <p>I test edge cases and optimize performance for real-world usage.</p>
+    </div>
+
+    <div class="approach-card">
+      <i class="fa-solid fa-rocket rocket"></i>
+      <span class="step">05</span>
+      <h3>Deploy & Improve</h3>
+      <p>I deploy reliably and continuously improve based on feedback.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ================= ACHIEVEMENTS + CERTIFICATIONS ================= -->
+<section class="about-achievements-cert" id="achievements-cert">
+
+  <div class="container-compact">
+
+    <!-- ACHIEVEMENTS -->
+    <div class="achievements-box">
+      <h2 class="title"><span>Achievements</span></h2>
+      <div class="achievement-item">
+        <i class="fa-solid fa-rocket"></i>
+        <span class="count" data-target="5">0</span>+
+        <p>Projects Completed</p>
+      </div>
+      <div class="achievement-item">
+        <i class="fa-solid fa-users"></i>
+        <span class="count" data-target="10000">0</span>+
+        <p>Happy Users</p>
+      </div>
+      <div class="achievement-item">
+        <i class="fa-solid fa-award"></i>
+        <span class="count" data-target="3">0</span>+
+        <p>Hackathon Wins</p>
+      </div>
+      <div class="achievement-item">
+        <i class="fa-solid fa-lightbulb"></i>
+        <span class="count" data-target="12">0</span>+
+        <p>Innovations</p>
+      </div>
+      <div class="achievement-item">
+        <i class="fa-solid fa-heart"></i>
+        <span class="count" data-target="5000">0</span>+
+        <p>Users Helped</p>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="certifications-box">
+      <h2 class="title"><span>Certifications</span></h2>
+      <div class="cert-item">
+        <img src="images/aws-cert.png" alt="AWS Certified">
+        <p>AWS Certified Developer</p>
+      </div>
+      <div class="cert-item">
+        <img src="images/react-cert.png" alt="React Certified">
+        <p>React Frontend Specialist</p>
+      </div>
+      <div class="cert-item">
+        <img src="images/node-cert.png" alt="Node.js Certified">
+        <p>Node.js Backend Developer</p>
+      </div>
+      <div class="cert-item">
+        <img src="images/git-cert.png" alt="Git Certified">
+        <p>Git & GitHub Mastery</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= ABOUT PAGE END QUOTE ================= -->
+<section class="about-end-quote" id="about-end-quote">
+  <p class="end-quote">
+    “I don’t just write code — I craft scalable, high-performance systems that make an impact.”
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------FOOTER -------->
+<footer class="premium-footer">
+
+  <!-- ================= TOP ROW ================= -->
+  <div class="footer-row footer-row-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Hanvitha Pesarikayala</h2>
+      <p class="brand-tag">Full Stack Developer</p>
+      <p class="brand-desc">
+        Building scalable, modern web applications with clean UI and reliable backend systems.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hanvithareddy0208" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:hanvithareddy0208@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hanvithareddy0208@gmail.com">hanvithareddy0208@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+91 9876543210">+91 9876543210</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          Open for Freelance
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop-house"></i>
+          Remote / Hybrid
+        </li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-section footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Occasional updates on projects & articles.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  <div class="footer-row footer-row-bottom">
+
+    <!-- SERVICES -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Full Stack Web Development</a></li>
+        <li><a href="#">Frontend Engineering</a></li>
+        <li><a href="#">Backend API Development</a></li>
+        <li><a href="#">UI / UX Implementation</a></li>
+        <li><a href="#">Performance Optimization</a></li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-section">
+      <h3>Technologies</h3>
+      <ul>
+        <li><a href="#">HTML • CSS • JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Node.js</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#">Three.js</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-section map-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Hyderabad&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+  <div class="footer-bottom">
+    <p>© 2025 Hanvitha Pesarikayala · All Rights Reserved</p>
+  </div>
+
+</footer>
+
+<script>
+  const skills = document.querySelector("#skills");
+  const fills = document.querySelectorAll(".fill");
+  const percents = document.querySelectorAll(".percent");
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+
+      fills.forEach(f => f.style.width = f.dataset.level);
+
+      percents.forEach(p => {
+        let target = +p.dataset.percent;
+        let count = 0;
+        const interval = setInterval(() => {
+          count++;
+          p.textContent = count + "%";
+          if (count === target) clearInterval(interval);
+        }, 18);
+      });
+
+      observer.disconnect();
+    }
+  }, { threshold: 0.35 });
+
+  observer.observe(skills);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = target / 200;
+
+    if(count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        updateCount();
+        observer.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(counter);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<!-- NAVBAR JS FIRST -->
+<script src="nav.js" defer></script>
+
+<!-- AUTH (login/register handling) -->
+<script src="auth.js" defer></script>
+
+<!-- PROFILE (profile editing, image update) -->
+<script src="profile.js" defer></script>
+
+<!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
+<script src="dynamicAuth.js" defer></script>
+
+<script type="module" src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
+
+
+
+
+
+
+
+

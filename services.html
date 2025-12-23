@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanvitha portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ================= 
+        NAVBAR 
+   ================= -->
+<div class="nav--bar">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <!-- Left Logo -->
+    <div class="nav-left">
+      <div class="logo" role="img" aria-label="Hanvitha logo"></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Nav Links -->
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link" id="loginNav">Login</a>
+
+      <div class="user-info" id="userInfo" style="display:none;">
+        <img id="navUserImg" alt="User">
+        <span id="navUsername"></span>
+        <div class="dropdown">
+           <a href="#" id="profileLink">Profile</a>
+        <a href="#" id="logoutBtn">Logout</a>
+        </div>
+
+
+    </div>
+  </nav>
+</div>
+<!------->
+
+
+
+
+
+
+
+
+
+
+<section class="services-section">
+
+  <h2 class="title"><span>Services & Pricing</span></h2>
+  <p class="section-subtitle">
+    Clear, flexible pricing with detailed service scope for transparency.
+  </p>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <h3>Frontend Development</h3>
+      <p class="service-desc">
+        Development of responsive, accessible, and performant user interfaces
+        using modern frontend technologies. Focused on clean structure,
+        readability, and long-term maintainability.
+      </p>
+      <ul>
+        <li>Responsive layouts</li>
+        <li>Cross-browser compatibility</li>
+        <li>Performance optimization</li>
+      </ul>
+      <div class="price">₹XXX / hour · Project-based</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Website Design</h3>
+      <p class="service-desc">
+        Clean and minimal website designs with an emphasis on usability,
+        visual hierarchy, and user experience.
+      </p>
+      <ul>
+        <li>Wireframes & layouts</li>
+        <li>UI consistency</li>
+        <li>Design system basics</li>
+      </ul>
+      <div class="price">Starting from ₹XXXX</div>
+    </div>
+
+    <div class="service-card">
+      <h3>UI Enhancements & Fixes</h3>
+      <p class="service-desc">
+        Improving existing websites by refining layouts, fixing responsiveness
+        issues, and enhancing visual clarity.
+      </p>
+      <ul>
+        <li>Layout cleanup</li>
+        <li>Mobile fixes</li>
+        <li>Accessibility improvements</li>
+      </ul>
+      <div class="price">Price after review</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Project Setup & Structure</h3>
+      <p class="service-desc">
+        Setting up clean project architecture, reusable components,
+        and version control workflows.
+      </p>
+      <ul>
+        <li>Folder structure</li>
+        <li>Git & repo setup</li>
+        <li>Best practices</li>
+      </ul>
+      <div class="price">₹XXX / project</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Basic Full-Stack Integration</h3>
+      <p class="service-desc">
+        Integrating frontend applications with APIs and basic backend logic
+        to handle real-world data.
+      </p>
+      <ul>
+        <li>API integration</li>
+        <li>Auth basics</li>
+        <li>Data handling</li>
+      </ul>
+      <div class="price">Starting from ₹XXXX</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Learning & Code Support</h3>
+      <p class="service-desc">
+        Personalized guidance for students and beginners to improve coding
+        skills and understand core concepts.
+      </p>
+      <ul>
+        <li>Code reviews</li>
+        <li>Debugging help</li>
+        <li>Concept explanations</li>
+      </ul>
+      <div class="price">Student-friendly pricing</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<section class="process-section">
+
+  <h2 class="title"><span>How I Work</span></h2>
+  <p class="process-intro">
+    A simple and transparent workflow that keeps things clear
+    from the first discussion to final delivery.
+  </p>
+
+  <div class="process-steps">
+
+    <div class="process-step">
+      <span class="step-number">01</span>
+      <div>
+        <h3>Understand the Requirement</h3>
+        <p>
+          I start by clearly understanding your goals, expectations,
+          and technical requirements before writing any code.
+        </p>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">02</span>
+      <div>
+        <h3>Plan & Structure</h3>
+        <p>
+          I plan the project structure, layout, and workflow
+          to ensure scalability and clean implementation.
+        </p>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">03</span>
+      <div>
+        <h3>Design & Build</h3>
+        <p>
+          I design interfaces and build features using clean,
+          readable, and maintainable code.
+        </p>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">04</span>
+      <div>
+        <h3>Review & Improve</h3>
+        <p>
+          I test responsiveness, fix issues, and refine the
+          user experience based on feedback.
+        </p>
+      </div>
+    </div>
+
+    <div class="process-step">
+      <span class="step-number">05</span>
+      <div>
+        <h3>Deliver & Support</h3>
+        <p>
+          I deliver the final output and provide support
+          for improvements or future updates.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<!--------FOOTER -------->
+<footer class="premium-footer">
+
+  <!-- ================= TOP ROW ================= -->
+  <div class="footer-row footer-row-top">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Hanvitha Pesarikayala</h2>
+      <p class="brand-tag">Full Stack Developer</p>
+      <p class="brand-desc">
+        Building scalable, modern web applications with clean UI and reliable backend systems.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/hanvithapesarikayala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hanvithareddy0208" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/hanvitha_reddy02?igsh=MW0zdzdnczU1eHdmOA==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:hanvithareddy0208@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul class="contact-list">
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hanvithareddy0208@gmail.com">hanvithareddy0208@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+91 9876543210">+91 9876543210</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          Open for Freelance
+        </li>
+        <li>
+          <i class="fa-solid fa-laptop-house"></i>
+          Remote / Hybrid
+        </li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-section footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Occasional updates on projects & articles.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+
+  </div>
+
+  <!-- ================= BOTTOM ROW ================= -->
+  <div class="footer-row footer-row-bottom">
+
+    <!-- SERVICES -->
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Full Stack Web Development</a></li>
+        <li><a href="#">Frontend Engineering</a></li>
+        <li><a href="#">Backend API Development</a></li>
+        <li><a href="#">UI / UX Implementation</a></li>
+        <li><a href="#">Performance Optimization</a></li>
+      </ul>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="footer-section">
+      <h3>Technologies</h3>
+      <ul>
+        <li><a href="#">HTML • CSS • JavaScript</a></li>
+        <li><a href="#">React.js</a></li>
+        <li><a href="#">Node.js</a></li>
+        <li><a href="#">MongoDB</a></li>
+        <li><a href="#">Three.js</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="footer-section map-section">
+      <h3>Location</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Hyderabad&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER BOTTOM ================= -->
+  <div class="footer-bottom">
+    <p>© 2025 Hanvitha Pesarikayala · All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+
+
+<!-- NAVBAR JS FIRST -->
+<script src="nav.js" defer></script>
+
+<!-- AUTH (login/register handling) -->
+<script src="auth.js" defer></script>
+
+<!-- PROFILE (profile editing, image update) -->
+<script src="profile.js" defer></script>
+
+<!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
+<script src="dynamicAuth.js" defer></script>
+
+<script type="module" src="script.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
