@@ -868,8 +868,13 @@ body {
 }
 .section-subtitle {
   text-align: center;
+}
+
+.section-subtitle {
   margin-top: 12px;
+  font-size: 0.95rem;
   color: #94a3b8;
+  line-height: 1.6;
 }
 
 /* GRID */
@@ -925,42 +930,40 @@ body {
 }
 
 /* BRAND COLORS */
-/* ========= FRONTEND ========= */
-.html i        { color: #E34F26; }   /* HTML5 */
-.css i         { color: #1572B6; }   /* CSS3 */
-.js i          { color: #F7DF1E; }   /* JavaScript */
-.react i       { color: #61DAFB; }   /* React */
-.bootstrap i   { color: #7952B3; }   /* Bootstrap */
-.sass i        { color: #CC6699; }   /* SASS */
-.responsive i  { color: #22D3EE; }   /* Responsive Design */
-.ux i          { color: #A855F7; }   /* UI/UX */
+/* ==========================
+   TECH ICON COLORS
+   ========================== */
 
-/* ========= BACKEND ========= */
-.node i        { color: #339933; }   /* Node.js */
-.express i     { color: #ffffff; }   /* Express (no official color) */
-.java i        { color: #ED8B00; }   /* Java */
-.spring i      { color: #6DB33F; }   /* Spring Boot */
-.api i         { color: #38BDF8; }   /* REST APIs */
-.jwt i         { color: #F59E0B; }   /* JWT */
+/* ===== Core / Frontend ===== */
+.html i           { color: #E34F26; }   /* HTML5 */
+.css i            { color: #1572B6; }   /* CSS3 */
+.js i             { color: #F7DF1E; }   /* JavaScript */
+.responsive i     { color: #22D3EE; }   /* Responsive Design */
 
-/* ========= DATABASE ========= */
-.mysql i       { color: #4479A1; }   /* MySQL */
-.mongo i       { color: #47A248; }   /* MongoDB */
-.db i          { color: #94A3B8; }   /* DB Design */
-.crud i        { color: #22C55E; }   /* CRUD */
+/* ===== Frameworks ===== */
+.react i          { color: #61DAFB; }   /* React */
+.bootstrap i      { color: #7952B3; }   /* Bootstrap */
+.sass i           { color: #CC6699; }   /* SASS */
+.tailwind i       { color: #38BDF8; }   /* Tailwind CSS */
 
-/* ========= TOOLS & PLATFORMS ========= */
-.git i         { color: #F05032; }   /* Git */
-.github i      { color: #E5E7EB; }   /* GitHub (white/light) */
-.docker i      { color: #2496ED; }   /* Docker */
-.cloud i       { color: #60A5FA; }   /* Cloud */
-.linux i       { color: #FCC624; }   /* Linux */
+/* ===== Database ===== */
+.mysql i          { color: #4479A1; }   /* MySQL */
+.db i             { color: #94A3B8; }   /* DB Design */
+.crud i           { color: #22C55E; }   /* CRUD */
 
-/* ========= CURRENTLY LEARNING ========= */
-.aws i         { color: #FF9900; }   /* AWS */
-.next i        { color: #ffffff; }   /* Next.js (black/white brand) */
-.system i      { color: #A855F7; }   /* System Design */
-.ai i          { color: #22D3EE; }   /* AI */
+/* ===== Tools & Platforms ===== */
+.git i            { color: #F05032; }   /* Git */
+.github i         { color: #E5E7EB; }   /* GitHub */
+.cloud i          { color: #60A5FA; }   /* Cloud */
+.ux i             { color: #A855F7; }   /* Figma */
+.js i             { color: #F59E0B; }   /* VS Code / DevTools */
+
+/* ===== Currently Learning ===== */
+.system i         { color: #A855F7; }   /* System Design */
+.ai i             { color: #22D3EE; }   /* AI Integration */
+.react i          { color: #61DAFB; }   /* Advanced React */
+.ux i             { color: #F472B6; }   /* UI Animations */
+
 
 
 /* ANIMATIONS */
@@ -1065,7 +1068,7 @@ body {
 
   .tech-card h3 {
     font-size: 0.9rem;
-  }
+}
 
   /* STILL SIDE BY SIDE */
   .tech-icons {
