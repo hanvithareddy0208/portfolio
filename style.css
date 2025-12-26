@@ -3995,8 +3995,10 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
 
 
 
+/* ================= SERVICES SECTION ================= */
+
 .services-section {
-  padding: 80px 20px;
+  padding: 80px 32px;               /* extra left/right padding */
   background: var(--bg-dark);
   color: var(--text);
 }
@@ -4014,12 +4016,14 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
   max-width: 720px;
   margin: 0 auto 50px;
   line-height: 1.6;
+  padding: 0 12px;                  /* prevents edge touching */
 }
 
 /* GRID */
 .services-grid {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 12px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
@@ -4066,25 +4070,11 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
   padding-top: 12px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 1.9rem;
-  }
 
-  .services-grid {
-    gap: 22px;
-  }
-}
-
-
-
-
-
-
+/* ================= PROCESS SECTION ================= */
 
 .process-section {
-  padding: 80px 20px;
+  padding: 80px 32px;               /* extra left/right padding */
   background: var(--bg-dark);
   color: var(--text);
 }
@@ -4095,12 +4085,14 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
   margin: 0 auto 60px;
   color: var(--muted);
   line-height: 1.6;
+  padding: 0 12px;
 }
 
 /* STEPS */
 .process-steps {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 12px;
   display: flex;
   flex-direction: column;
   gap: 38px;
@@ -4129,16 +4121,7 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
   line-height: 1.6;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .process-step {
-    gap: 16px;
-  }
 
-  .step-number {
-    font-size: 1.5rem;
-  }
-}
 
 
 
