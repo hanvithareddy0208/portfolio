@@ -940,6 +940,11 @@ body {
 .js i             { color: #F7DF1E; }   /* JavaScript */
 .responsive i     { color: #22D3EE; }   /* Responsive Design */
 
+/* ===== Backend ===== */
+.java i          { color: #007396; }   /* Java */
+.node i          { color: #339933; }   /* Node.js */
+.express i       { color: #000000; }   /* Express.js */
+
 /* ===== Frameworks ===== */
 .react i          { color: #61DAFB; }   /* React */
 .bootstrap i      { color: #7952B3; }   /* Bootstrap */
