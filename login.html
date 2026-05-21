@@ -70,7 +70,12 @@
     <form id="loginForm" class="auth-form active">
       <h2><i class="fa-solid fa-right-to-bracket"></i> Login</h2>
       <input type="text" id="loginIdentifier" placeholder="Username or Email">
-      <input type="password" id="loginPassword" placeholder="Password">
+      <div class="password-field">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button type="button" class="password-toggle" data-password-target="loginPassword" aria-label="Show password">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
       <button type="submit">Login</button>
       <p class="switch-text">Don't have an account? <span id="goSignup">Sign Up</span></p>
       <div id="loginError" class="auth-error"></div>
@@ -84,10 +89,24 @@
         <input type="email" id="signupEmail" placeholder="Email">
         <input type="text" id="signupPhone" placeholder="Phone Number">
         <input type="text" id="signupLinkedIn" placeholder="LinkedIn Profile">
-        <input type="password" id="signupPassword" placeholder="Password">
-        <input type="password" id="signupConfirm" placeholder="Confirm Password">
+        <div class="password-field">
+          <input type="password" id="signupPassword" placeholder="Password">
+          <button type="button" class="password-toggle" data-password-target="signupPassword" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+        <div class="password-field">
+          <input type="password" id="signupConfirm" placeholder="Confirm Password">
+          <button type="button" class="password-toggle" data-password-target="signupConfirm" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
         <input type="file" id="signupImage" accept="image/*">
   </div>
+      <div class="password-strength" aria-live="polite">
+        <span id="passwordStrengthBar"></span>
+        <small id="passwordStrengthText">Use 8+ characters with letters and numbers.</small>
+      </div>
       <button type="submit">Register</button>
       <p class="switch-text">Already have an account? <span id="goLogin">Login</span></p>
       <div id="signupError" class="auth-error"></div>
@@ -264,6 +283,7 @@
 <!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
 <script src="dynamicAuth.js" defer></script>
 
+<script src="features.js" defer></script>
 <script type="module" src="script.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

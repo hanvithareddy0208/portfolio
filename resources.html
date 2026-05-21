@@ -54,8 +54,22 @@
     A curated set of learning materials, tools, and references that I personally use and recommend for building modern, scalable, and clean applications.
   </p>
 
+  <div class="resource-toolbar">
+    <div class="resource-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input id="resourceSearch" type="search" placeholder="Search resources">
+    </div>
+    <div class="resource-filters" aria-label="Resource filters">
+      <button class="resource-filter active" type="button" data-filter="all">All</button>
+      <button class="resource-filter" type="button" data-filter="frontend">Frontend</button>
+      <button class="resource-filter" type="button" data-filter="javascript">JavaScript</button>
+      <button class="resource-filter" type="button" data-filter="design">Design</button>
+      <button class="resource-filter" type="button" data-filter="career">Career</button>
+    </div>
+  </div>
+
   <div class="resources-grid">
-    <div class="resource-card">
+    <div class="resource-card" data-category="frontend javascript">
       <h3>Web Dev Cheat Sheet</h3>
       <p>
         A compact reference covering HTML, CSS, and JavaScript essentials.
@@ -64,7 +78,7 @@
       <a href="#" class="btn">Download PDF</a>
     </div>
 
-    <div class="resource-card">
+    <div class="resource-card" data-category="frontend career">
       <h3>Project Starter Template</h3>
       <p>
         A clean and scalable folder structure for frontend and full-stack projects,
@@ -73,7 +87,7 @@
       <a href="#" class="btn">Download Template</a>
     </div>
 
-    <div class="resource-card">
+    <div class="resource-card" data-category="javascript">
       <h3>JavaScript Notes</h3>
       <p>
         Well-organized notes explaining JavaScript fundamentals, ES6 features,
@@ -82,7 +96,7 @@
       <a href="#" class="btn">Download Notes</a>
     </div>
 
-    <div class="resource-card">
+    <div class="resource-card" data-category="design">
       <h3>UI Design Assets</h3>
       <p>
         A collection of icons, color palettes, and layout references
@@ -91,7 +105,7 @@
       <a href="#" class="btn">View Assets</a>
     </div>
 
-    <div class="resource-card">
+    <div class="resource-card" data-category="career frontend">
       <h3>Learning Roadmap</h3>
       <p>
         A structured roadmap for frontend and full-stack development,
@@ -100,7 +114,7 @@
       <a href="#" class="btn">View Roadmap</a>
     </div>
 
-    <div class="resource-card">
+    <div class="resource-card" data-category="career javascript design">
       <h3>Useful Dev Links</h3>
       <p>
         Hand-picked links to documentation, tools, and platforms
@@ -241,6 +255,37 @@
 
 
 
+
+
+<section class="learning-path-section">
+  <h2 class="title"><span>Learning Path</span></h2>
+  <p class="section-intro">
+    Track the core skills that turn scattered tutorials into portfolio-ready progress.
+  </p>
+
+  <div class="learning-path">
+    <label class="path-item">
+      <input type="checkbox" data-path-item="semantic-html">
+      <span>Build semantic HTML pages with accessible structure.</span>
+    </label>
+    <label class="path-item">
+      <input type="checkbox" data-path-item="responsive-css">
+      <span>Create responsive layouts with Flexbox and Grid.</span>
+    </label>
+    <label class="path-item">
+      <input type="checkbox" data-path-item="javascript-dom">
+      <span>Use JavaScript to update the DOM and handle forms.</span>
+    </label>
+    <label class="path-item">
+      <input type="checkbox" data-path-item="api-project">
+      <span>Connect a project to an API and handle loading states.</span>
+    </label>
+    <label class="path-item">
+      <input type="checkbox" data-path-item="deploy">
+      <span>Deploy a polished project and document the setup.</span>
+    </label>
+  </div>
+</section>
 
 
 <section class="reviews-section">
@@ -565,6 +610,7 @@ requestAnimationFrame(scroll);
 <!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
 <script src="dynamicAuth.js" defer></script>
 
+<script src="features.js" defer></script>
 <script type="module" src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>

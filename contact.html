@@ -135,6 +135,12 @@
 
         <h3 class="contact-form-title">Send a Message</h3>
 
+        <div class="contact-topic-pills" aria-label="Message topics">
+          <button type="button" data-contact-topic="Portfolio website">Portfolio</button>
+          <button type="button" data-contact-topic="Full-stack project">Full-stack</button>
+          <button type="button" data-contact-topic="UI fixes">UI fixes</button>
+        </div>
+
         <div class="contact-form-group">
           <input type="text" required />
           <label>Your Name</label>
@@ -150,14 +156,45 @@
           <label>Subject</label>
         </div>
 
+        <div class="contact-form-row">
+          <div class="contact-form-group">
+            <select required>
+              <option value="" selected disabled></option>
+              <option>Under Rs. 10,000</option>
+              <option>Rs. 10,000 - Rs. 25,000</option>
+              <option>Rs. 25,000 - Rs. 50,000</option>
+              <option>Flexible / discuss first</option>
+            </select>
+            <label>Budget Range</label>
+          </div>
+
+          <div class="contact-form-group">
+            <select required>
+              <option value="" selected disabled></option>
+              <option>This week</option>
+              <option>2 - 4 weeks</option>
+              <option>1 - 2 months</option>
+              <option>Flexible</option>
+            </select>
+            <label>Timeline</label>
+          </div>
+        </div>
+
         <div class="contact-form-group">
-          <textarea required></textarea>
+          <textarea required maxlength="500"></textarea>
           <label>Your Message</label>
+        </div>
+
+        <div class="contact-form-meta">
+          <span id="messageCount">0 / 500</span>
+          <span>Project details help me reply faster.</span>
         </div>
 
         <button type="submit" class="contact-send-btn">
           Send Message <i class="fas fa-arrow-right"></i>
         </button>
+
+        <p class="contact-form-status" id="contactFormStatus" aria-live="polite"></p>
 
       </form>
     </div>
@@ -301,6 +338,7 @@
 <!-- DYNAMIC AUTH SWITCHING (form switching + navbar updates) -->
 <script src="dynamicAuth.js" defer></script>
 
+<script src="features.js" defer></script>
 <script type="module" src="script.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -2,6 +2,7 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js";
 
 const canvas = document.getElementById("bg");
+if (canvas) {
 const scene = new THREE.Scene();
 
 // ---------- CAMERA ----------
@@ -168,6 +169,7 @@ animate();
 
 window.addEventListener("resize", resize);
 window.addEventListener("orientationchange", resize);
+}
 
 
 
@@ -179,12 +181,14 @@ window.addEventListener("orientationchange", resize);
 //hamburger menu
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("nav-links");
+if (hamburger && navLinks) {
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navLinks.classList.toggle("active");
     const expanded = hamburger.getAttribute("aria-expanded") === "true";
     hamburger.setAttribute("aria-expanded", !expanded);
   });
+}
 
 
 
@@ -202,6 +206,7 @@ window.addEventListener("orientationchange", resize);
   let isDeleting = false;
   const typingElement = document.querySelector(".typing");
 
+if (typingElement) {
   function typeEffect() {
     const current = words[index];
     typingElement.textContent = current.substring(0, char);
@@ -219,6 +224,7 @@ window.addEventListener("orientationchange", resize);
   }
 
   typeEffect();
+}
 
 
 
@@ -240,6 +246,7 @@ window.addEventListener("orientationchange", resize);
   const wrapper = document.querySelector(".testimonials-wrapper");
   const track = document.querySelector(".testimonials-track");
 
+if (wrapper && track) {
   let scrollSpeed = 1.2; // increase for faster scroll
   let isPaused = false;
 
@@ -264,6 +271,7 @@ window.addEventListener("orientationchange", resize);
   }
 
   autoScroll();
+}
 
 
 
@@ -311,6 +319,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const scrollBtn = document.getElementById("scrollTopBtn");
 
+if (scrollBtn) {
   // Show button after scrolling down 300px
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -327,4 +336,5 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth"
     });
   });
+}
 

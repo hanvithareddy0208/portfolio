@@ -4127,6 +4127,375 @@ input[disabled]{background:#222; color:#aaa; border:1px solid #555;}
 }
 
 
+/* ================= PAGE FEATURE ADDITIONS ================= */
+
+.service-highlights,
+.resource-toolbar,
+.estimator-panel,
+.deliverables-grid,
+.learning-path {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 42px;
+  padding: 0 12px;
+}
+
+.service-highlights div,
+.deliverable-item,
+.estimator-panel,
+.learning-path,
+.path-item {
+  background: rgba(15, 23, 42, 0.76);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+}
+
+.service-highlights div {
+  padding: 18px;
+  text-align: center;
+}
+
+.service-highlights strong {
+  display: block;
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+.service-highlights span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.service-estimator-section,
+.service-deliverables-section,
+.learning-path-section {
+  padding: 70px 32px;
+  background: var(--bg-dark);
+  color: var(--text);
+}
+
+.estimator-panel {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 26px;
+  padding: 26px;
+}
+
+.estimator-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.estimator-controls label,
+.contact-form-row label {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.estimator-controls input,
+.estimator-controls select,
+.contact-form-group select,
+.resource-search input {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 10px;
+  background: rgba(2, 6, 23, 0.42);
+  color: var(--text);
+  padding: 10px 12px;
+  outline: none;
+}
+
+.estimator-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.estimator-check input {
+  width: 18px;
+  min-height: 18px;
+  margin: 0;
+}
+
+.estimator-result {
+  border-left: 1px solid rgba(168, 85, 247, 0.3);
+  padding-left: 24px;
+}
+
+.estimator-result span,
+.contact-form-meta,
+.contact-form-status {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.estimator-result strong {
+  display: block;
+  margin: 8px 0 12px;
+  font-size: 1.65rem;
+  color: var(--accent);
+}
+
+.estimator-result p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.deliverable-item {
+  padding: 22px;
+}
+
+.deliverable-item i {
+  color: var(--primary);
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.deliverable-item h3 {
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.deliverable-item p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.resource-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.resource-search {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+.resource-search i {
+  position: absolute;
+  left: 14px;
+  top: 21px;
+  color: var(--muted);
+}
+
+.resource-search input {
+  padding-left: 40px;
+}
+
+.resource-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resource-filter,
+.contact-topic-pills button {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 9px 14px;
+  cursor: pointer;
+}
+
+.resource-filter.active,
+.resource-filter:hover,
+.contact-topic-pills button:hover,
+.contact-topic-pills button.active {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.resource-card.is-hidden {
+  display: none;
+}
+
+.learning-path {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.path-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  color: var(--text);
+}
+
+.path-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: #22D3EE;
+}
+
+.path-item:has(input:checked) span {
+  color: var(--primary);
+  text-decoration: line-through;
+}
+
+.contact-topic-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.contact-form-group select {
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.contact-form-group select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(34,211,238,0.25);
+}
+
+.contact-form-group select:valid + label {
+  top: -9px;
+  font-size: 10px;
+  color: var(--primary);
+}
+
+.contact-form-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: -8px 0 16px;
+}
+
+.contact-form-status {
+  margin-top: 14px;
+  min-height: 20px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 44px;
+}
+
+.auth-form .password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #cbd5e1;
+}
+
+.auth-form .password-toggle:hover {
+  background: rgba(34, 211, 238, 0.12);
+  color: #22D3EE;
+}
+
+.password-strength {
+  margin: 8px 0 14px;
+}
+
+.password-strength span {
+  display: block;
+  width: 0;
+  height: 6px;
+  border-radius: 999px;
+  background: #ef4444;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+
+.password-strength small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 900px) {
+  .estimator-panel,
+  .resource-toolbar {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .deliverables-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .estimator-result {
+    border-left: 0;
+    border-top: 1px solid rgba(168, 85, 247, 0.3);
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-highlights,
+  .estimator-controls,
+  .deliverables-grid,
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-estimator-section,
+  .service-deliverables-section,
+  .learning-path-section {
+    padding: 48px 16px;
+  }
+
+  .estimator-panel,
+  .learning-path {
+    padding: 16px;
+  }
+
+  .contact-form-meta {
+    flex-direction: column;
+  }
+}
+
+
 
 
 

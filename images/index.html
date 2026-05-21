@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Background Canvas -->
+  <canvas id="bg"></canvas>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <!-- Navbar inside hero -->
+    <nav class="navbar">
+      <div class="logo"></div>
+
+      <!-- Hamburger toggle for mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <!-- Resources Dropdown -->
+    <li class="dropdown">
+      <a href="resources.html" class="dropbtn">
+        Resources <span class="arrows">▼</span>
+      </a>
+      <ul class="dropdown-content">
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#guides">Guides</a></li>
+      </ul>
+    </li>
+            <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+     <div id="user-section">
+      <a href="auth.html" class="signup-btn" id="login-btn">Sign Up / Login</a>
+    </div>
+      </div>
+    </nav>
+
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <h1>Hi, I'm <span class="highlight">Hanvitha</span></h1>
+      <p>Full Stack Developer | Web Enthusiast | Problem Solver</p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+  </header>
+
+
+
+  <section id="technologies" class="technologies">
+  <h2>Our Expertise in Web Development</h2>
+  <p class="tech-intro">
+    We specialize in creating modern, responsive, and scalable web applications using the latest technologies.
+    From designing stunning frontends to building robust backends, we ensure every project is crafted with precision and passion.
+  </p>
+
+  <h3>We Master These Technologies</h3>
+  <div class="tech-grid">
+    <!-- Frontend -->
+    <div class="tech-card"><i class="fab fa-html5 html"></i><h4>HTML</h4></div>
+    <div class="tech-card"><i class="fab fa-css3-alt css"></i><h4>CSS</h4></div>
+    <div class="tech-card"><i class="fab fa-js-square js"></i><h4>JavaScript</h4></div>
+    <div class="tech-card"><i class="fab fa-react react"></i><h4>React</h4></div>
+    <div class="tech-card"><i class="fab fa-angular angular"></i><h4>Angular</h4></div>
+    <div class="tech-card"><i class="fas fa-code ts"></i><h4>TypeScript</h4></div>
+    <div class="tech-card"><i class="fab fa-bootstrap bootstrap"></i><h4>Bootstrap</h4></div>
+    <div class="tech-card"><i class="fas fa-paint-brush tailwind"></i><h4>Tailwind CSS</h4></div>
+
+    <!-- Backend -->
+    <div class="tech-card"><i class="fab fa-node-js nodejs"></i><h4>Node.js</h4></div>
+    <div class="tech-card"><i class="fas fa-server express"></i><h4>Express.js</h4></div>
+    <div class="tech-card"><i class="fab fa-python python"></i><h4>Python</h4></div>
+
+    <!-- Databases -->
+    <div class="tech-card"><i class="fas fa-database sql"></i><h4>SQL</h4></div>
+    <div class="tech-card"><i class="fas fa-database mongodb"></i><h4>MongoDB</h4></div>
+
+    <!-- Tools & Others -->
+    <div class="tech-card"><i class="fab fa-git git"></i><h4>Git</h4></div>
+    <div class="tech-card"><i class="fab fa-github github"></i><h4>GitHub</h4></div>
+    <div class="tech-card"><i class="fas fa-box docker"></i><h4>Docker</h4></div>
+    <div class="tech-card"><i class="fas fa-fire firebase"></i><h4>Firebase</h4></div>
+    <div class="tech-card"><i class="fas fa-mobile-alt responsive"></i><h4>Responsive Design</h4></div>
+    <div class="tech-card"><i class="fas fa-terminal restapi"></i><h4>REST API</h4></div>
+    <div class="tech-card"><i class="fas fa-cloud cloud"></i><h4>Cloud Deployment</h4></div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="testimonials" class="testimonials">
+  <h2>What Our Customers Say</h2>
+
+  <div class="slider-container">
+    <button class="arrow left">&#10094;</button>
+    <div class="slider-wrapper">
+      <!-- Testimonial Slide 1 -->
+      <div class="testimonial-slide">
+        <h4>Jane Doe</h4>
+        <img src="1.png" alt="Customer 1">
+        <div class="stars">★★★★★</div>
+        <p>"The team built an amazing website for our startup. Very professional and skilled!"</p>
+      </div>
+      <!-- Testimonial Slide 2 -->
+      <div class="testimonial-slide">
+        <h4>John Smith</h4>
+        <img src="22.png" alt="Customer 2">
+        <div class="stars">★★★★★</div>
+        <p>"Highly recommend! The project was delivered on time and exceeded expectations."</p>
+      </div>
+      <!-- Testimonial Slide 3 -->
+      <div class="testimonial-slide">
+        <h4>Emily Clark</h4>
+        <img src="3.png" alt="Customer 3">
+        <div class="stars">★★★★☆</div>
+        <p>"Excellent full-stack development services with great attention to detail."</p>
+      </div>
+      <!-- Testimonial Slide 4 -->
+      <div class="testimonial-slide">
+        <h4>Michael Brown</h4>
+        <img src="4.png" alt="Customer 4">
+        <div class="stars">★★★★★</div>
+        <p>"Creative, reliable, and very responsive. Our project went flawlessly."</p>
+      </div>
+      <!-- Testimonial Slide 5 -->
+      <div class="testimonial-slide">
+        <h4>Sarah Lee</h4>
+        <img src="3c53c5d6-fa53-446e-95a6-33a3f78f14ca.png" alt="Customer 5">
+        <div class="stars">★★★★☆</div>
+        <p>"Professional team with excellent communication and coding skills."</p>
+      </div>
+      <!-- Testimonial Slide 6 -->
+      <div class="testimonial-slide">
+        <h4>David Kim</h4>
+        <img src="6.png" alt="Customer 6">
+        <div class="stars">★★★★★</div>
+        <p>"We are thrilled with the final product! Highly recommended for full-stack projects."</p>
+      </div>
+    </div>
+    <button class="arrow right">&#10095;</button>
+  </div>
+</section>
+
+
+
+<section class="why-us-timeline">
+  <!-- 3D Neon Background with 15 random particles -->
+  <div class="neon-bg">
+    <div class="particle" style="--top:5%; --left:10%; --size:8px; --delay:0s;"></div>
+    <div class="particle" style="--top:15%; --left:70%; --size:12px; --delay:1s;"></div>
+    <div class="particle" style="--top:25%; --left:30%; --size:6px; --delay:2s;"></div>
+    <div class="particle" style="--top:35%; --left:80%; --size:10px; --delay:1.5s;"></div>
+    <div class="particle" style="--top:45%; --left:20%; --size:9px; --delay:0.5s;"></div>
+    <div class="particle" style="--top:55%; --left:50%; --size:11px; --delay:2.5s;"></div>
+    <div class="particle" style="--top:60%; --left:65%; --size:7px; --delay:3s;"></div>
+    <div class="particle" style="--top:70%; --left:15%; --size:10px; --delay:1.2s;"></div>
+    <div class="particle" style="--top:75%; --left:85%; --size:6px; --delay:0.8s;"></div>
+    <div class="particle" style="--top:80%; --left:40%; --size:9px; --delay:2.8s;"></div>
+    <div class="particle" style="--top:10%; --left:25%; --size:7px; --delay:1.7s;"></div>
+    <div class="particle" style="--top:20%; --left:60%; --size:8px; --delay:0.9s;"></div>
+    <div class="particle" style="--top:50%; --left:75%; --size:12px; --delay:3.2s;"></div>
+    <div class="particle" style="--top:65%; --left:35%; --size:6px; --delay:1.3s;"></div>
+    <div class="particle" style="--top:85%; --left:55%; --size:10px; --delay:2.1s;"></div>
+  </div>
+
+  <h2>Why You Should Choose Us</h2>
+  <p class="subtitle">Our journey of excellence and innovation</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">🚀</div>
+      <div class="timeline-content">
+        <h3>Fast Performance</h3>
+        <p>Optimized solutions that run smoothly and efficiently.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">💡</div>
+      <div class="timeline-content">
+        <h3>Innovative Ideas</h3>
+        <p>Creative approaches tailored to your unique needs.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">🔒</div>
+      <div class="timeline-content">
+        <h3>Secure & Reliable</h3>
+        <p>Trustworthy solutions keeping your data safe.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">🤝</div>
+      <div class="timeline-content">
+        <h3>Customer Support</h3>
+        <p>We are here for you 24/7, ensuring your satisfaction.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">⚡</div>
+      <div class="timeline-content">
+        <h3>Quick Delivery</h3>
+        <p>Projects completed on time without compromising quality.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon">🌟</div>
+      <div class="timeline-content">
+        <h3>Customer Satisfaction</h3>
+        <p>Our clients love the results — we go above and beyond.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-about">
+      <h2>Hanvitha's Portfolio</h2>
+      <p>Full Stack Developer passionate about building interactive web experiences and scalable solutions.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="footer-resources">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#services">Guides</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:hanvitha@example.com">hanvitha@example.com</a></p>
+      <p>Phone: +91 12345 67890</p>
+      <div class="footer-socials">
+        <a href="https://github.com/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Hanvitha. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script src="nav.js"></script>
+  <script src="toggle.js"></script>
+</body>
+</html>
+
+
+
+
