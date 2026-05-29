@@ -693,7 +693,6 @@ function App() {
           window.location.hash = "#/";
         }}
       />
-      <StatusStrip user={user} route={route} settings={settings} />
       <main ref={pageRef} className={`route-shell route-${route}`} key={route}>
         <RouteScene route={route} />
         <PageMarkup html={pageHtml} />
